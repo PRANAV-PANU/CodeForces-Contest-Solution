@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    long a,b;
+    cin>>a>>b;
+    double div = (a*1.0)/b;
+    cout<<"floor "<<a<<" / "<<b<<" = "<<floor(div)<<"\n";
+    cout<<"ceil "<<a<<" / "<<b<<" = "<<ceil(div)<<"\n";
+    cout<<"round "<<a<<" / "<<b<<" = "<<round(div)<<"\n";
+    return 0;
+} 
+
+//division of int/int is int
+//we convert variable a into float so float/int = float
