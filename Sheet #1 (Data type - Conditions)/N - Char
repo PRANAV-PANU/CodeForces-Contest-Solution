@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    char c;
+    cin>>c;
+    int ascii = (int)c;
+    if(ascii >64 && ascii<=90)
+    ascii += 32;
+    else
+    ascii -= 32;
+    
+    cout<<(char)ascii<<"\n";
+    return 0;
+}
