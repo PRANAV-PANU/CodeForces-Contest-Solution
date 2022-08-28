@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    double pi = 3.141592653;
+    double r;
+    cin>>r;
+    double area = pi*r*r;
+    cout<<setprecision(11)<<area;
+    return 0;
+}
+//main importance was the use of set precision in this problem
