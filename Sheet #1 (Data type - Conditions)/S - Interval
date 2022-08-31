@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+//[0,25], (25,50], (50,75], (75,100]
+ 
+int main(){
+    double number;
+    cin>>number;
+    
+    if(number>=0 && number<=25)
+    cout<<"Interval [0,25]"<<"\n";
+    else if(number>25 && number<=50)
+    cout<<"Interval (25,50]"<<"\n";
+    else if(number>50 && number<=75)
+    cout<<"Interval (50,75]"<<"\n";
+    else if(number>75 && number<=100)
+    cout<<"Interval (75,100]"<<"\n";
+    else
+    cout<<"Out of Intervals"<<"\n";
+    return 0;
+}
