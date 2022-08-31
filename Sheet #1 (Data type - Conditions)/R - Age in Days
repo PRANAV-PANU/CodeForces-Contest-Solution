@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int total;
+    cin>>total;
+    
+    int days,months,years;
+    
+    years = total/365;
+    total %= 365;
+    
+    if(total ==0){
+        months = 0;
+    }else{
+        months = total/30;
+        total %=30;
+    }
+    days = total;
+    cout<<years<<" years"<<"\n";
+    cout<<months<<" months"<<"\n";
+    cout<<days<<" days"<<"\n";
+    return 0;
+}
