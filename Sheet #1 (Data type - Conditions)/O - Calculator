@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    long a ,b;
+    string s;
+    cin>>s;
+    int i;
+    char c;
+    for(i=0;i<s.length();i++){
+        if(s[i] == '+'||s[i] == '-'||s[i] == '*'||s[i] == '/'){
+            c = s[i];
+            break;
+        }
+    }
+    a = stoi(s.substr(0,i));
+    b = stoi(s.substr(i+1));
+    // cout<<a<<" "<<b;
+    if(c == '+'){
+        cout<<a+b<<"\n";
+    }else if(c == '-'){
+        cout<<a-b<<"\n";
+    }else if(c == '*'){
+        cout<<a*b<<"\n";
+    }else{
+        cout<<a/b<<"\n";
+    }
+}
+
+//this question focuses on the use of substring
