@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    double num;
+    cin>>num;
+    
+    double original = num;
+    num = round(num);
+    
+    if(num == original)
+    cout<<"int "<<(int)num;
+    else{
+        double val = original;
+        original = floor(original);
+        cout<<"float "<<original<<" "<<val-original;
+    }
+    
+    return 0;
+}
