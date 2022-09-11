@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    long long int n,k,a;
+    cin>>n>>k>>a;
+    
+    long long int vl = (n*k)/a;
+    double vl1  = 1.0*(n*k)/a;
+    
+    if(vl == vl1){
+        if (vl <= 2147483647){
+            cout<<"int";
+        }else{
+            cout<<"long long";
+        }
+    }else{
+        cout<<"double";
+    }
+    return 0;
+}
