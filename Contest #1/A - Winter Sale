@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    int p,x;
+    cin>>p>>x;
+    
+    double cp = (1.0*x)/(1-(0.01*p));
+    
+    cout<<cp<<"\n";
+    return 0;
+}
